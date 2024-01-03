@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  
+}
+.elementos-header{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.titulo-header{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.791);
+}
+.titulo-header a{
+    text-decoration: none;
+    color: black;
+}
+.titulo-header span{
+    color:rgb(55, 125, 187) ;
+}
+
+.container-links ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container-links ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.791);
+}
+.container-links ul li a:hover{
+    border-bottom: 1px solid rgba(0, 0, 255, 0.309);
+}
+
+/*estilizando main*/
+
+
+.secao-quarto{
+    width: 100%;
+    background-color: white;
+}
+.container-quarto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+.texto-quarto{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.texto-quarto h3{
+   font-size: 40px;
+   font-weight: normal;
+   padding: 20px;
+}
+.texto-quarto p{
+   font-size: 20px;
+   font-weight: normal;
+}
+.quarto-fotos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    padding: 30px;
+}
+.quarto-fotos-unidade{
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 1;
+    
+}
+
+.quarto-fotos-unidade img{
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+}
+.texto-infos{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.texto-infos h4{
+    padding: 20px;
+}
+.texto-infos ul{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-between;
+}
+.texto-infos ul li{
+    width: 20%;
+}
+@media(max-width:414px){
+    .texto-infos ul{
+        flex-direction: column;
+      align-items: center;
+        text-align: center;
+    }
+}
